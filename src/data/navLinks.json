@@ -1,0 +1,19 @@
+{
+	"navLinks": [
+		{
+			"id": 1,
+			"name": "about",
+			"to": "/"
+		},
+		{
+			"id": 2,
+			"name": "projects",
+			"to": "/projects"
+		},
+		{
+			"id": 3,
+			"name": "contact",
+			"to": "/"
+		}
+	]
+}
