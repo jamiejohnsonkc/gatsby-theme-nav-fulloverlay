@@ -1,18 +1,24 @@
 {
-	"name": "gatsby-theme-nav-fulloverlay",
-	"version": "1.0.0",
-	"main": "index.js",
-	"license": "MIT",
-	"private": true,
-	"peerDependencies": {
-		"gatsby": "^2.24.47",
-		"react": "^16.13.1",
-		"react-dom": "^16.13.1"
-	},
-	"dependencies": {
-		"theme-ui": "^0.3.3"
-	},
-	"devDependencies": {
-		"gatsby-plugin-theme-ui": "^0.3.3"
-	}
+    "name": "gatsby-theme-nav-fulloverlay",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "description": "right drawer nav, darkens page background upon open",
+    "private": false,
+    "author": "@jamiejohnsonkc",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jamiejohnsonkc/gatsby-theme-nav-fulloverlay.git"
+    },
+    "peerDependencies": {
+        "gatsby": "^2.24.47",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1"
+    },
+    "dependencies": {
+        "theme-ui": "^0.3.3"
+    },
+    "devDependencies": {
+        "gatsby-plugin-theme-ui": "^0.3.3"
+    }
 }
