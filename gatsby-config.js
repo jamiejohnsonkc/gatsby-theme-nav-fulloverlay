@@ -1,5 +1,5 @@
 module.exports = { plugins: [
-  `gatsby-plugin-theme-ui`,
+  // `gatsby-plugin-theme-ui`,
   `gatsby-theme-jim-theme-ui`,
   {
     resolve: 'gatsby-plugin-react-svg',
