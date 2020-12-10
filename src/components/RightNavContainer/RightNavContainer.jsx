@@ -1,21 +1,24 @@
 /** @jsx jsx */
 import { jsx, Box } from 'theme-ui'
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import RightNavMenu from '../RightNavMenu/RightNavMenu'
-import ContactIconsBar from '../../../../devSite/src/components/product/templates/elements/ContactIconsBar'
+// import ContactIconsBar from '../../../../devSite/src/components/product/templates/elements/ContactIconsBar'
+// import useOutsideClick from '../useOutsideClick'
 
-const RightNavContainer = ({ navOpen, props }) => {
-    useState({ navOpen })
+const RightNavContainer = ({ navOpen, ...props }) => {
+    // useState({ navOpen })
+
     return (
         <Box
             {...props}
             className="navContainer"
             navOpen={navOpen}
+            // ref={ref}
             sx={{
                 margin: '0px',
                 minWidth: '0px',
                 display: 'flex',
-                alignItems: 'baseline',
+                // alignItems: 'baseline',
                 justifyContent: 'space-around',
                 flexWrap: 'no-wrap',
                 backgroundColor: 'background',
@@ -26,13 +29,13 @@ const RightNavContainer = ({ navOpen, props }) => {
                 top: '0px',
                 width: '100%',
                 willChange: 'transform',
-                zIndex: '50',
+                zIndex: '6',
                 alignItems: 'start',
                 transform: (props) =>
                     navOpen ? 'translateX(0)' : 'translateX(100%)',
                 transition: 'transform 0.35s ease-in-out',
-                py: ['unset', 4, 4, 4, 4],
-                px: ['unset', 4, 4, 4, 4],
+                py: ['unset', 4, 4, 4, 4, 4],
+                px: ['unset', 4, 4, 4, 4, 4],
                 '@media screen and (min-width: 56em)': {
                     py: 5,
                     px: 6,
@@ -41,7 +44,7 @@ const RightNavContainer = ({ navOpen, props }) => {
             }}
         >
             <RightNavMenu />
-            <ContactIconsBar
+            {/* <ContactIconsBar
                 linkBoxTransform="translateY(25px)"
                 display="flex"
                 flex="1 0 auto"
@@ -50,7 +53,7 @@ const RightNavContainer = ({ navOpen, props }) => {
                 minHeight="4em"
                 alignSelf="stretch"
                 paddingLeft="16px"
-            />
+            /> */}
         </Box>
     )
 }

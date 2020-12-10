@@ -4,14 +4,15 @@ import { Link } from 'gatsby'
 import React from 'react'
 import NavUl from '../NavUl'
 import NavLi from '../NavLi'
-import Data from '../../../../jamiejohnsonkc/src/data/navLinks.json'
+import Data from '../../data/navLinks.json'
+// import Data from '../../../../jamiejohnsonkc/src/data/navLinks.json'
 
 const RightNavMenu = ({
-    navMenuItemHover,
+    // navMenuItemHover,
     linkTo,
-    hoverTransition,
-    navOpen,
-    setNavOpen,
+    // hoverTransition,
+    // navOpen,
+    // setNavOpen,
     ...props
 }) => {
     return (
@@ -39,8 +40,8 @@ const RightNavMenu = ({
                     pl: [3, 3, 0, 0, 0],
                 }}
             >
-                {Data.navLinks.map((link, id) => (
-                    <NavLi key={id}>
+                {Data.navLinks.map((link) => (
+                    <NavLi key={link.id}>
                         <Link to={link.to} className="activeClassName">
                             {link.name}
                         </Link>
