@@ -16,9 +16,11 @@
         "react-dom": "^16.13.1"
     },
     "dependencies": {
-        "theme-ui": "^0.3.3"
+        "theme-ui": "^0.3.3",
+        "gatsby-theme-jim-theme-ui": "1.0.0"
     },
     "devDependencies": {
-        "gatsby-plugin-theme-ui": "^0.3.3"
+        "gatsby-plugin-theme-ui": "^0.3.3",
+        "gatsby-plugin-react-svg": "^3.0.0"
     }
 }
