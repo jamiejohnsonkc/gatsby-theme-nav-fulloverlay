@@ -1,19 +1,19 @@
 {
-	"navLinks": [
-		{
-			"id": 1,
-			"name": "about",
-			"to": "/"
-		},
-		{
-			"id": 2,
-			"name": "projects",
-			"to": "/projects"
-		},
-		{
-			"id": 3,
-			"name": "contact",
-			"to": "/"
-		}
-	]
+    "navLinks": [
+        {
+            "id": 1,
+            "name": "link 1",
+            "to": "/"
+        },
+        {
+            "id": 2,
+            "name": "link 2",
+            "to": "/"
+        },
+        {
+            "id": 3,
+            "name": "link 3",
+            "to": "/"
+        }
+    ]
 }

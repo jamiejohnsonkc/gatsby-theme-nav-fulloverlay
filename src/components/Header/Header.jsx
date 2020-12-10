@@ -8,9 +8,19 @@ import Brand from '../Brand'
 import NavToggle from '../NavToggle'
 import FpoLogo from '../FpoLogo'
 import FpoGlyph from '../FpoGlyph'
-import Logo from '../../../../jamiejohnsonkc/src/components/product/bits/Logo'
+// import Logo from '../../../../jamiejohnsonkc/src/components/product/bits/Logo'
 
-const Header = ({ navOpen, setNavOpen, display, ...props }) => {
+const Header = ({
+    navOpen,
+    setNavOpen,
+    // handleMenuToggle,
+    display,
+    ...props
+}) => {
+    const handleMenuToggle = (e) => {
+        setNavOpen(!navOpen)
+    }
+
     return (
         <>
             <Flex
@@ -32,16 +42,17 @@ const Header = ({ navOpen, setNavOpen, display, ...props }) => {
                 }}
             >
                 <Brand
-                    largeScreenBrand={<Logo />}
-                    smallScreenBrand={<Logo />}
+                    // largeScreenBrand={<Logo />}
+                    // smallScreenBrand={<Logo />}
                     display="inline-flex"
                 />
 
                 <NavToggle
                     {...props}
                     className="navToggle"
+                    type="button"
+                    onClick={handleMenuToggle}
                     navOpen={navOpen}
-                    setNavOpen={setNavOpen}
                     display="inline-flex"
                 />
             </Flex>
