@@ -24,10 +24,9 @@ const NavOverlay = ({ largeScreenBrand, smallScreenBrand, ...props }) => {
     }
 
     const ref = useRef()
-    // const ref = useRef()
 
     useOutsideClick(ref, () => {
-        alert('You clicked outside')
+        // alert('You clicked outside')
         if (navOpen) setNavOpen(false)
     })
 
@@ -43,7 +42,10 @@ const NavOverlay = ({ largeScreenBrand, smallScreenBrand, ...props }) => {
                 />
                 <OverlayFilter navOpen={navOpen} />
                 <div ref={ref}>
-                    <RightNavContainer navOpen={navOpen} />
+                    <RightNavContainer
+                        navOpen={navOpen}
+                        setNavOpen={setNavOpen}
+                    />
                 </div>
                 {props.children}
             </SiteWrapper>
