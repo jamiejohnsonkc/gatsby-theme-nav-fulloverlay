@@ -21,7 +21,16 @@ const Brand = ({
             {...props}
             sx={{
                 display,
-                height: ['2em', '3em', '3em', '3em', '3em'],
+                height: [
+                    '2em',
+                    '3em',
+                    '3em',
+                    '3em',
+                    '3em',
+                    '3em',
+                    '3em',
+                    '3em',
+                ],
             }}
         >
             <Box
@@ -31,9 +40,11 @@ const Brand = ({
                     display: [
                         'none',
                         'none',
-                        'inline-flex',
-                        'inline-flex',
-                        'inline-flex',
+                        'inline-grid',
+                        'inline-grid',
+                        'inline-grid',
+                        'inline-grid',
+                        'inline-grid',
                     ],
                 }}
             >
@@ -44,12 +55,15 @@ const Brand = ({
                 {...props}
                 sx={{
                     display: [
-                        'inline-flex',
-                        'inline-flex',
+                        'inline-grid',
+                        'inline-grid',
+                        'none',
+                        'none',
                         'none',
                         'none',
                         'none',
                     ],
+                    justifySelf: 'end',
                 }}
             >
                 {smallScreenBrand}

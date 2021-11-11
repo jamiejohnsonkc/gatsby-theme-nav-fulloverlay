@@ -27,8 +27,8 @@ const Header = ({
                 className="header"
                 {...props}
                 sx={{
-                    py: [0, 3, 3, 3, 3],
-                    px: [3, 4, 3, 3, 3],
+                    py: [0, 3, 3, 3, 3, 3],
+                    px: [null, null, 3, 3, 3, 3],
                     margin: '0',
                     minWidth: '0',
                     display: 'flex',

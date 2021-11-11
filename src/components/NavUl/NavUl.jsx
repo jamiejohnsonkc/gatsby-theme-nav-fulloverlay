@@ -2,9 +2,12 @@
 import { jsx } from 'theme-ui'
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from '@emotion/styled'
+
+const StyledUl = styled.ul``
 
 const NavUl = (props) => (
-    <ul
+    <StyledUl
         {...props}
         sx={{
             listStyle: 'none',
@@ -14,7 +17,7 @@ const NavUl = (props) => (
         }}
     >
         {props.children}
-    </ul>
+    </StyledUl>
 )
 // }
 NavUl.propTypes = {
