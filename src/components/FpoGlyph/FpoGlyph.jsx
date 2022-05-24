@@ -6,15 +6,15 @@ import PropTypes from 'prop-types'
 import GlyphIpsum from '../../svg/assets/fpo/glyph-1.svg'
 
 const FpoGlyph = (props) => (
-	<>
-		<GlyphIpsum
-			{...props}
-			sx={{
-				fill: 'primary',
-				width: '100%',
-			}}
-		/>
-	</>
+    <>
+        <GlyphIpsum
+            {...props}
+            sx={{
+                fill: 'primary',
+                width: '100%',
+            }}
+        />
+    </>
 )
 
 FpoGlyph.propTypes = {}

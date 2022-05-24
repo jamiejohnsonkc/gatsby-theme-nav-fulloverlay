@@ -8,48 +8,30 @@ import React, { useState } from 'react'
 // import Brand from '../Brand'
 
 const Navbar = (props) => {
-	const [navOpen, setNavOpen] = useState(false)
-	return (
-		<Box
-			{...props}
-			as='nav'
-			sx={{
-				variant: `${props.navbarVariant}`,
-				display: 'flex',
-				justifyContent: 'space-between',
-				alignItems: 'center',
-				width: '100%',
-				position: 'fixed',
-				zIndex: '1',
-			}}
-		>
-			{/* <Brand
-				{...props}
-				sx={{
-					variant: 'nav.mastHeadLogo',
-					zindex: '1',
-				}}
-			/> */}
-
-			{/* <NavToggle
-				{...props}
-				sx={{
-					zIndex: '3',
-				}}
-				navOpen={navOpen}
-				setNavOpen={setNavOpen}
-			/> */}
-			{/* <RightNav navOpen={navOpen} setNavOpen={setNavOpen} /> */}
-		</Box>
-	)
+    const [navOpen, setNavOpen] = useState(false)
+    return (
+        <Box
+            {...props}
+            as="nav"
+            sx={{
+                variant: `${props.navbarVariant}`,
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+                width: '100%',
+                position: 'fixed',
+                zIndex: '1',
+            }}
+        ></Box>
+    )
 }
 
 Navbar.propTypes = {
-	navbarVariant: PropTypes.any,
+    navbarVariant: PropTypes.any,
 }
 
 Navbar.defaultProps = {
-	// navbarVariant: 'nav.rightNavNavbar',
+    // navbarVariant: 'nav.rightNavNavbar',
 }
 
 export default Navbar
