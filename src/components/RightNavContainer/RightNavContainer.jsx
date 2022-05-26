@@ -3,14 +3,14 @@ import { jsx, Box } from 'theme-ui'
 import React, { useState, useRef } from 'react'
 import RightNavMenu from '../RightNavMenu/RightNavMenu'
 
-const RightNavContainer = ({ navOpen, setNavOpen, ...props }) => {
+const RightNavContainer = ({ menuOpen, setMenuOpen, ...props }) => {
     return (
-        <div navOpen={navOpen} setNavOpen={setNavOpen}>
+        <div menuOpen={menuOpen} setMenuOpen={setMenuOpen}>
             <div
                 {...props}
                 className="navContainer"
-                navOpen={navOpen}
-                setNavOpen={setNavOpen}
+                menuOpen={menuOpen}
+                setMenuOpen={setMenuOpen}
                 sx={{
                     margin: '0px',
                     minWidth: '0px',
@@ -28,7 +28,7 @@ const RightNavContainer = ({ navOpen, setNavOpen, ...props }) => {
                     zIndex: '6',
                     alignItems: 'start',
                     transform: (props) =>
-                        navOpen ? 'translateX(0)' : 'translateX(100%)',
+                        menuOpen ? 'translateX(0)' : 'translateX(100%)',
                     transition: 'transform 0.35s ease-in-out',
                     py: ['unset', 4, 4, 4, 4, 4],
                     px: ['unset', 4, 4, 4, 4, 4],
@@ -39,8 +39,8 @@ const RightNavContainer = ({ navOpen, setNavOpen, ...props }) => {
                     },
                 }}
             >
-                {/* <RightNavMenu navOpen={navOpen} /> */}
-                <RightNavMenu navOpen={navOpen} setNavOpen={setNavOpen} />
+                {/* <RightNavMenu menuOpen={menuOpen} /> */}
+                <RightNavMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
             </div>
         </div>
     )

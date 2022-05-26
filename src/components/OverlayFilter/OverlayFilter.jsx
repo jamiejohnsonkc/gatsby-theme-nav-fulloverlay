@@ -3,13 +3,13 @@ import { jsx, Box } from 'theme-ui'
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 
-const OverlayFilter = ({ navOpen, props }) => {
+const OverlayFilter = ({ menuOpen, props }) => {
     return (
         <Box
             {...props}
-            navOpen={navOpen}
+            menuOpen={menuOpen}
             className="overLayFilter"
-            // navOpen={navOpen}
+            // menuOpen={menuOpen}
             sx={{
                 height: '100%',
                 width: '100%',
@@ -19,8 +19,8 @@ const OverlayFilter = ({ navOpen, props }) => {
                 position: 'fixed',
                 backgroundColor: `rgba(0, 0, 0, 0.8)`,
                 transition: 'opacity 0.3s ease-out 0s',
-                opacity: (props) => (navOpen ? '1' : '0'),
-                zIndex: (props) => (navOpen ? '5' : '1'),
+                opacity: (props) => (menuOpen ? '1' : '0'),
+                zIndex: (props) => (menuOpen ? '5' : '1'),
                 willChange: 'opacity, z-index',
             }}
         />

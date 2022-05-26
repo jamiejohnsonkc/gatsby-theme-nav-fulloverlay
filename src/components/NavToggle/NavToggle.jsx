@@ -5,13 +5,13 @@ import React, { useState } from 'react'
 // import HamburgerRotate from '../HamburgerRotate/HamburgerRotate'
 import SandwhichRotate from '../SandwhichRotate'
 
-const NavToggle = ({ display, navOpen, ...props }) => {
+const NavToggle = ({ display, menuOpen, ...props }) => {
     return (
         <>
             <SandwhichRotate
                 {...props}
-                navOpen={navOpen}
-                // onClick={() => setNavOpen(!navOpen)}
+                menuOpen={menuOpen}
+                // onClick={() => setMenuOpen(!menuOpen)}
                 display={display}
             />
         </>

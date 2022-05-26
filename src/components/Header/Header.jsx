@@ -11,14 +11,14 @@ import FpoGlyph from '../FpoGlyph'
 // import Logo from '../../../../jamiejohnsonkc/src/components/product/bits/Logo'
 
 const Header = ({
-    navOpen,
-    setNavOpen,
+    menuOpen,
+    setMenuOpen,
     // handleMenuToggle,
     display,
     ...props
 }) => {
     const handleMenuToggle = (e) => {
-        setNavOpen(!navOpen)
+        setMenuOpen(!menuOpen)
     }
 
     return (
@@ -52,12 +52,12 @@ const Header = ({
                     className="navToggle"
                     type="button"
                     onClick={handleMenuToggle}
-                    navOpen={navOpen}
+                    menuOpen={menuOpen}
                     display="inline-flex"
                 />
             </Flex>
 
-            {/* <RightNav navOpen={navOpen} /> */}
+            {/* <RightNav menuOpen={menuOpen} /> */}
         </>
     )
 }

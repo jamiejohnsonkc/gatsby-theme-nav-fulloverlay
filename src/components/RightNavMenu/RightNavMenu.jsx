@@ -11,25 +11,25 @@ const RightNavMenu = ({
     // navMenuItemHover,
     linkTo,
     // hoverTransition,
-    navOpen,
-    setNavOpen,
+    menuOpen,
+    setMenuOpen,
     ...props
 }) => {
     const closeMenu = (e) => {
-        setNavOpen(false)
+        setMenuOpen(false)
     }
 
     return (
         <div
             className="rightNavMenuContainer"
-            navOpen={navOpen}
-            setNavOpen={setNavOpen}
+            menuOpen={menuOpen}
+            setMenuOpen={setMenuOpen}
         >
             <NavUl
                 {...props}
                 className="rightNavMenu"
-                navOpen={navOpen}
-                setNavOpen={setNavOpen}
+                menuOpen={menuOpen}
+                setMenuOpen={setMenuOpen}
                 sx={{
                     minHeight: ['16em', '16em', '30em', '30em', '30em'],
                     flex: [
@@ -53,8 +53,8 @@ const RightNavMenu = ({
                 {Data.navLinks.map((link) => (
                     <NavLi
                         key={link.id}
-                        navOpen={navOpen}
-                        setNavOpen={setNavOpen}
+                        menuOpen={menuOpen}
+                        setMenuOpen={setMenuOpen}
                         onClick={closeMenu}
                     >
                         <Link to={link.to} className="activeClassName">

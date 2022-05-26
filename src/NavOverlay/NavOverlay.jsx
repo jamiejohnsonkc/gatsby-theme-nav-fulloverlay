@@ -13,21 +13,21 @@ import useOutsideClick from '../components/useOutsideClick'
 import Main from '../components/Main'
 
 const NavOverlay = ({ largeScreenBrand, smallScreenBrand, ...props }) => {
-    const [navOpen, setNavOpen] = useState(false)
+    const [menuOpen, setMenuOpen] = useState(false)
 
     const handleMenuToggle = (e) => {
-        setNavOpen(!navOpen)
+        setMenuOpen(!menuOpen)
     }
 
     const closeMenu = (e) => {
-        setNavOpen(false)
+        setMenuOpen(false)
     }
 
     const ref = useRef()
 
     useOutsideClick(ref, () => {
         // alert('You clicked outside')
-        if (navOpen) setNavOpen(false)
+        if (menuOpen) setMenuOpen(false)
     })
 
     return (
@@ -35,16 +35,16 @@ const NavOverlay = ({ largeScreenBrand, smallScreenBrand, ...props }) => {
             <SiteWrapper>
                 <Header
                     className="header"
-                    navOpen={navOpen}
-                    setNavOpen={setNavOpen}
+                    menuOpen={menuOpen}
+                    setMenuOpen={setMenuOpen}
                     largeScreenBrand={largeScreenBrand}
                     smallScreenBrand={smallScreenBrand}
                 />
-                <OverlayFilter navOpen={navOpen} />
+                <OverlayFilter menuOpen={menuOpen} />
                 <div ref={ref}>
                     <RightNavContainer
-                        navOpen={navOpen}
-                        setNavOpen={setNavOpen}
+                        menuOpen={menuOpen}
+                        setMenuOpen={setMenuOpen}
                     />
                 </div>
                 {props.children}
