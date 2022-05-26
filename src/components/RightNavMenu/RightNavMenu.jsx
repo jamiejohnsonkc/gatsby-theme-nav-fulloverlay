@@ -20,11 +20,11 @@ const RightNavMenu = ({
     }
 
     return (
-        <div
-            className="rightNavMenuContainer"
-            menuOpen={menuOpen}
-            setMenuOpen={setMenuOpen}
-        >
+        // <div
+        //     className="rightNavMenuContainer"
+        //     menuOpen={menuOpen}
+        //     setMenuOpen={setMenuOpen}
+        // >
             <NavUl
                 {...props}
                 className="rightNavMenu"
