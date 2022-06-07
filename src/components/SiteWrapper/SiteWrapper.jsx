@@ -5,7 +5,7 @@ import { useState } from 'react'
 import PropTypes from 'prop-types'
 
 const SiteWrapper = ({ siteWrapperBgColor, siteWrapperFlexDir, ...props }) => {
-    const [navOpen, setNavOpen] = useState(false)
+    const [menuOpen, setMenuOpen] = useState(false)
 
     return (
         <Box

@@ -5,10 +5,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import animation from '../../../../gatsby-theme-scroll-reveal/animation'
 
-// const NavLi = ({ navOpen, setNavOpen, ...props }) => {
+//TODO clean up notes
+
+// const NavLi = ({ menuOpen, setMenuOpen, ...props }) => {
 const NavLi = (props) => {
     // const closeMenu = (e) => {
-    //     setNavOpen(false)
+    //     setMenuOpen(false)
     // }
 
     return (
@@ -16,7 +18,7 @@ const NavLi = (props) => {
             {...props}
             {...animation.slideLeft}
             // onClick={closeMenu}
-            // navOpen={navOpen}
+            // menuOpen={menuOpen}
             sx={{}}
         />
     )

@@ -8,7 +8,7 @@ import React, { useState } from 'react'
 // import Brand from '../Brand'
 
 const Navbar = (props) => {
-    const [navOpen, setNavOpen] = useState(false)
+    const [menuOpen, setMenuOpen] = useState(false)
     return (
         <Box
             {...props}
