@@ -1,0 +1,1 @@
+//TODO review basic composition and structure of components, their relationships and passing of props (particularly the unecessary use of spread props).  
